@@ -1,0 +1,70 @@
+sudo pacman -S dbus
+sudo pacman -S tree
+sudo pacman -S xinit
+sudo pacman -S xorg-xinit
+sudo pacman -S alsa-oss audiofile
+sudo pacman -S slim slim-themes archlinux-themes-slim
+sudo pacman -S dialog
+sudo pacman -S wpa_supplicant
+sudo pacman -S gdm
+sudo pacman -S fcitx fcitx-gtk2 fcitx-gtk3
+sudo pacman -S qy-zenhei wqy-microhei 
+sudo pacman -S wqy-zenhei 
+sudo pacman -S wqy-microhei
+sudo pacman -S xf86-video-intel
+sudo pacman -S make
+sudo pacman -S xcompmgr
+sudo pacman -S rxvt-unicode
+sudo pacman -S chromium
+sudo pacman -S firefox
+sudo pacman -S Ohsnap
+sudo pacman -S xorg-font-utils
+sudo pacman -S yaourt
+sudo pacman -S binutils
+sudo pacman -S base-devel --needed
+sudo pacman -S git
+sudo pacman -S synapse
+sudo pacman -S bc devhelp gnome-dictionary rhythmbox xnoise
+
+sudo mv /usr/lib/udev/rules.d/80-net-setup-link.rules{,.bak}
+
+sudo cp /etc/netctl/examples/ethernet-dhcp /etc/netctl
+sudo netctl enable ethernet-dhcp
+sudo systemctl enable gdm
+sudo systemctl -f enable graphical.target
+
+
+sudo pacman -S ethtool     
+sudo pacman -S gconf-editor     
+sudo pacman -S gcc-libs base-devel    
+sudo pacman -S wine
+sudo pacman -S lib32-gtk2 lib32-nss
+sudo pacman -S lib32-mpg123 lib32-sdl
+sudo pacman -S libvirt     
+sudo pacman -S qemu pm-utils radvd ebtables dnsmasq 
+sudo pacman -S wqy-zenhei ttf-fireflysung    
+sudo pacman -S winetricks     
+sudo pacman -S rsync     
+sudo pacman -S gedit     
+sudo pacman -S mesa-libgl     
+sudo pacman -S mesa bumblebee xf86-video-intel nvidia  
+sudo pacman -S openssl     
+sudo pacman -S iftop     
+sudo pacman -S mesa     
+sudo pacman -S mesa bumblebee xf86-video-intel nvidia  
+sudo pacman -S lib32-mesa-libgl lib32-mesa lib32-nvidia-utils   
+sudo pacman -S optirun     
+sudo pacman -S nvidia-settings     
+sudo pacman -S primus     
+sudo pacman -S lib32-primus     
+sudo pacman -S vdpauinfo     
+sudo pacman -S opengl     
+sudo pacman -S bbswitch bbswitch-lts    
+sudo pacman -S glu     
+sudo pacman -S fcitx-googlepinyin     
+sudo pacman -S xlockmore     
+sudo pacman -S iproute2 mtr traceroute   
+sudo pacman -S shadowsocks     
+sudo pacman -S net-tools dnsutils inetutils iproute2  
+sudo pacman -S openbsd-netcat     
+

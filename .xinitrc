@@ -1,0 +1,13 @@
+#export LANG=zh_CN.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+export GDM_LANG="en_US.UTF-8"
+xrdb ~/.Xresources
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
+export XIM=fcitx  
+export XIM_PROGRAM=fcitx  
+exec awesome
+fcitx &
